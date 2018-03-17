@@ -11,7 +11,7 @@ def loadCsvFile():
         dataset=list(lines)
         for i in range(0,len(dataset)-1):
             for j in range(0,len(dataset[i])-1):
-                if random.random()< 0.6:       #split data : 80% for training and 20% for testing
+                if random.random()< 0.8:       #split data : 80% for training and 20% for testing
                     trainingSet.append(dataset[i])
                 else:
                     testSet.append(dataset[i])

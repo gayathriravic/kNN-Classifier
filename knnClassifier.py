@@ -59,7 +59,7 @@ def computeAccuracy(predictions,test):
 
 if __name__ == '__main__':
     testSet, trainingSet=loadCsvFile()
-    k=1
+    k=4
     predictedClass=[]
     for i in range(len(testSet)):
         neighbors=getSimilarity(trainingSet,testSet[i],k)

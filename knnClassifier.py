@@ -20,13 +20,8 @@ def loadCsvFile():
 
 def computeEuclideanDistance(trainingSet,test,length):
     dist=0
-    #print("inside dist")
-    #print(trainingSet)
-    #print(test)
     for i in range(length-1):
         dist+=pow((float(trainingSet[i])-float(test[i])),2)
-        #print(dist)
-        #exit()
     return math.sqrt(dist)
 
 
